@@ -44,19 +44,19 @@ volumeSlider.addEventListener("change", () => {
 //changes sound and image when air horn is selected
 airHorn.addEventListener("click", () => {
     soundImage.src = "./assets/media/images/air-horn.svg";
-    soundImage.src = "./assets/media/audio/air-horn.mp3";
+    soundElement.src = "./assets/media/audio/air-horn.mp3";
 });
 
 //changes sound and image when car horn is selected
 carHorn.addEventListener("click", () => {
     soundImage.src = "./assets/media/images/car.svg";
-    soundImage.src = "./assets/media/audio/car-horn.mp3";
+    soundElement.src = "./assets/media/audio/car-horn.mp3";
 });
 
 //changes sound and image when party horn is selected
 partyHorn.addEventListener("click", () => {
     soundImage.src = "./assets/media/images/party-horn.svg";
-    soundImage.src = "./assets/media/audio/party-horn.mp3";
+    soundElement.src = "./assets/media/audio/party-horn.mp3";
 });
 
 //plays sounds when honk button is clicked
