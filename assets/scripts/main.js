@@ -61,12 +61,12 @@ partyHorn.addEventListener("click", () => {
 
 //plays sounds when honk button is clicked
 honkBtn.addEventListener("click", (event) => {
-    event.preventDefault();
     soundElement.play();
+    event.preventDefault();
 })
 
 //updates volume image based on current volume
-function updateVolumeImg(val) {
+const updateVolumeImg = (val) => {
     honkBtn.disabled = false;
     if(val >= 67 && val <= 100) {
         volumeImage.src = "./assets/media/icons/volume-level-3.svg";
@@ -74,7 +74,7 @@ function updateVolumeImg(val) {
         volumeImage.src = "./assets/media/icons/volume-level-2.svg";
     } else if(val >= 1 && val <= 33) {
         volumeImage.src = "./assets/media/icons/volume-level-1.svg";
-    } else if(val === 0) {
+    } else if(val == 0) {
         volumeImage.src = "./assets/media/icons/volume-level-0.svg";
         honkBtn.disabled = true;
     }
