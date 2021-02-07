@@ -16,7 +16,7 @@ let soundImage = document.getElementById('sound-image');
 let volumeImage = document.getElementById('volume-image');
 
 //button to play sound
-let honkBtn = document.getElementById('hook-btn');
+let honkBtn = document.getElementById('honk-btn');
 
 //radio switches for different sounds
 let airHorn = document.getElementById('radio-air-horn');
